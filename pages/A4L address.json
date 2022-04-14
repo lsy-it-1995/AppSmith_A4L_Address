@@ -1,0 +1,356 @@
+{
+  "unpublishedPage": {
+    "name": "A4L address",
+    "slug": "a4l-address",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1248,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1420,
+          "containerStyle": "none",
+          "snapRows": 125,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 56,
+          "minHeight": 1292,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "multiRowSelection": false,
+              "widgetName": "Table1",
+              "onSort": "{{storeValue('-','1')}}",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "_",
+                "rowIndex",
+                "Column_2",
+                "Type",
+                "Status",
+                "State",
+                "Address",
+                "Owner",
+                "Company_Name",
+                "Service_Phone",
+                "Email"
+              ],
+              "isVisibleDownload": true,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onSort"
+                }
+              ],
+              "displayName": "Table",
+              "iconSVG": "/static/media/icon.db8a9cbd.svg",
+              "topRow": 1,
+              "bottomRow": 140,
+              "isSortable": true,
+              "parentRowSpace": 10,
+              "type": "TABLE_WIDGET",
+              "defaultSelectedRow": "0",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.3125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onSort"
+                }
+              ],
+              "dynamicBindingPathList": [
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns._.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Column_2.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Status.computedValue"
+                },
+                {
+                  "key": "primaryColumns.State.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Address.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Owner.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Company_Name.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Service_Phone.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Email.computedValue"
+                },
+                {
+                  "key": "primaryColumns.rowIndex.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Type.computedValue"
+                }
+              ],
+              "leftColumn": 2,
+              "primaryColumns": {
+                "_": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "_",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "_",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow._))}}"
+                },
+                "Column_2": {
+                  "index": 1,
+                  "width": 150,
+                  "id": "Column_2",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Column_2",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Column_2))}}"
+                },
+                "Status": {
+                  "index": 3,
+                  "width": 150,
+                  "id": "Status",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Status",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Status))}}"
+                },
+                "State": {
+                  "index": 4,
+                  "width": 150,
+                  "id": "State",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "State",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.State))}}"
+                },
+                "Address": {
+                  "index": 5,
+                  "width": 150,
+                  "id": "Address",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Address",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Address))}}"
+                },
+                "Owner": {
+                  "index": 6,
+                  "width": 150,
+                  "id": "Owner",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Owner",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Owner))}}"
+                },
+                "Company_Name": {
+                  "index": 7,
+                  "width": 150,
+                  "id": "Company_Name",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Company_Name",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Company_Name))}}"
+                },
+                "Service_Phone": {
+                  "index": 8,
+                  "width": 150,
+                  "id": "Service_Phone",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Service_Phone",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Service_Phone))}}"
+                },
+                "Email": {
+                  "index": 9,
+                  "width": 150,
+                  "id": "Email",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Email",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Email))}}"
+                },
+                "rowIndex": {
+                  "index": 10,
+                  "width": 150,
+                  "id": "rowIndex",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "rowIndex",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.rowIndex))}}"
+                },
+                "Type": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "Type",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Type",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Type))}}"
+                }
+              },
+              "delimiter": ",",
+              "key": "v0vf12da3x",
+              "derivedColumns": {},
+              "rightColumn": 64,
+              "textSize": "PARAGRAPH",
+              "widgetId": "28y9xtn6d2",
+              "isVisibleFilters": true,
+              "tableData": "{{A4L_address_google_sheet.data}}\n",
+              "isVisible": true,
+              "label": "Data",
+              "searchKey": "",
+              "enableClientSideSearch": true,
+              "version": 3,
+              "totalRecordsCount": 0,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "horizontalAlignment": "CENTER",
+              "isVisibleSearch": true,
+              "isVisiblePagination": true,
+              "primaryColumnId": "rowIndex",
+              "verticalAlignment": "CENTER",
+              "columnSizeMap": {
+                "task": 245,
+                "step": 62,
+                "status": 75
+              }
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "A4L address_A4L_address_google_sheet",
+              "name": "A4L_address_google_sheet",
+              "confirmBeforeExecute": false,
+              "pluginType": "SAAS",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "widgetNames": [
+          "MainContainer",
+          "Table1"
+        ],
+        "validOnPageLoadActions": true,
+        "id": "A4L address",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "policies": [],
+  "gitSyncId": "6257be4d0d3d384069c0b8ab_6257be4d0d3d384069c0b8ad"
+}
